@@ -1,0 +1,12 @@
+@import "reset/_reset.scss";
+@import "article/_article.scss";
+@import "core-header/_core-header.scss";
+@import "mixins/mixins";
+
+.container{
+    width: 100%;
+    @include simpleflex(column, center,center);
+}
+.main{
+    width: 90vw;
+}

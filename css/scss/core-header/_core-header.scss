@@ -1,0 +1,57 @@
+@import "../mixins/_mixins.scss";
+@import "../variables/_variables.scss";
+.core-header{
+    @include wymiary(100%, 100vh);
+    background-image: url("../images/monika-grabkowska-P1aohbiT-EY-unsplash.jpg");
+    background-size: cover;
+    background-position: 0vw -50vw;
+    background-repeat: no-repeat;
+    @include simpleflex(column, center, center);
+    position: relative;
+    .core-header__titlesection{
+        @include wymiary(94.5vw, 90vh);
+        @include glassmorph(#628b8fb4, 4.5px, $dark-blue);
+        position:relative;
+        .core-header__title{
+            font-size:20vw;
+            font-family: $sans;
+            color:white;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%, -50%) rotate(-5deg);
+        }
+        .core-header__link:nth-of-type(1){
+            font-family: $sans;
+            font-size: 5vw;
+            color:white;
+            position:absolute;
+            top:20%;
+            left: 10%;
+            text-decoration: none;
+        }
+        .core-header__link:nth-of-type(2){
+            font-family: $sans;
+            font-size: 5vw;
+            color:white;
+            position:absolute;
+            bottom:20%;
+            right: 10%;
+            text-decoration: none;
+        }   
+    }
+}
+.navigation{
+    background-color: $blue;
+    @include wymiary(100%, 7vw);
+    @include simpleflex(row, space-evenly, center);
+    .navigation__pagetitle{
+        flex-grow: 0.7;
+        font-family:$sans;
+        font-size:3vw;
+    }
+    .navigation__menu{
+        @include simpleflex(row, center, center);
+    }
+}
+// .core-header--subsite{}
