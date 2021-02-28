@@ -5,15 +5,65 @@
           box-sizing: border-box;
 }
 
+@-webkit-keyframes rollout {
+  from {
+    width: 15vw;
+    height: 15vw;
+  }
+  to {
+    width: 40vw;
+    height: 15vw;
+  }
+}
+
+@keyframes rollout {
+  from {
+    width: 15vw;
+    height: 15vw;
+  }
+  to {
+    width: 40vw;
+    height: 15vw;
+  }
+}
+
+@-webkit-keyframes rollin {
+  from {
+    width: 40vw;
+    height: 15vw;
+  }
+  to {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+
+@keyframes rollin {
+  from {
+    width: 40vw;
+    height: 15vw;
+  }
+  to {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+
+.article {
+  margin: 0.5vw;
+}
+
 .article:nth-of-type(1) {
   background-image: url("../images/pureemarchawkowe.jpg");
   background-size: 150%;
   background-position: 40% 34%;
-  width: 20vw;
-  height: 20vw;
+  width: 15vw;
+  height: 15vw;
   display: block;
   border-radius: 20vw;
   position: relative;
+  -webkit-animation: rollin 1s;
+          animation: rollin 1s;
 }
 
 .article:nth-of-type(1) .article__link {
@@ -21,19 +71,17 @@
 }
 
 .article:nth-of-type(1):hover {
-  background-image: url("../images/pureemarchawkowe.jpg");
-  background-size: 150%;
-  background-position: 40% 34%;
   width: 40vw;
-  height: 20vw;
-  display: block;
-  border-radius: 20vw;
-  position: relative;
+  height: 15vw;
+  -webkit-animation: rollout 1s;
+          animation: rollout 1s;
 }
 
 .article:nth-of-type(1):hover .article__link {
+  -webkit-animation: rollout 1s;
+          animation: rollout 1s;
   width: 40vw;
-  height: 20vw;
+  height: 15vw;
   display: block;
   background-color: #00000069;
   border-radius: 20vw;
@@ -52,14 +100,16 @@
 }
 
 .article:nth-of-type(2) {
-  background-image: url("../images/pureemarchawkowe.jpg");
+  background-image: url("../images/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg");
   background-size: 150%;
   background-position: 40% 34%;
-  width: 20vw;
-  height: 20vw;
+  width: 15vw;
+  height: 15vw;
   display: block;
   border-radius: 20vw;
   position: relative;
+  -webkit-animation: rollin 1s;
+          animation: rollin 1s;
 }
 
 .article:nth-of-type(2) .article__link {
@@ -67,22 +117,20 @@
 }
 
 .article:nth-of-type(2):hover {
-  background-image: url("../images/pureemarchawkowe.jpg");
-  background-size: 150%;
-  background-position: 40% 34%;
   width: 40vw;
-  height: 20vw;
-  display: block;
-  border-radius: 20vw;
-  position: relative;
+  height: 15vw;
+  -webkit-animation: rollout 1s;
+          animation: rollout 1s;
 }
 
 .article:nth-of-type(2):hover .article__link {
   width: 40vw;
-  height: 20vw;
+  height: 15vw;
   display: block;
   background-color: #00000069;
   border-radius: 20vw;
+  -webkit-animation: rollout 1s;
+          animation: rollout 1s;
 }
 
 .article:nth-of-type(2):hover .article__link .article__content {
@@ -98,14 +146,16 @@
 }
 
 .article:nth-of-type(3) {
-  background-image: url("../images/pureemarchawkowe.jpg");
+  background-image: url("../images/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg");
   background-size: 150%;
   background-position: 40% 34%;
-  width: 20vw;
-  height: 20vw;
+  width: 15vw;
+  height: 15vw;
   display: block;
   border-radius: 20vw;
   position: relative;
+  -webkit-animation: rollin 1s;
+          animation: rollin 1s;
 }
 
 .article:nth-of-type(3) .article__link {
@@ -113,22 +163,20 @@
 }
 
 .article:nth-of-type(3):hover {
-  background-image: url("../images/pureemarchawkowe.jpg");
-  background-size: 150%;
-  background-position: 40% 34%;
   width: 40vw;
-  height: 20vw;
-  display: block;
-  border-radius: 20vw;
-  position: relative;
+  height: 15vw;
+  -webkit-animation: rollout 1s;
+          animation: rollout 1s;
 }
 
 .article:nth-of-type(3):hover .article__link {
   width: 40vw;
-  height: 20vw;
+  height: 15vw;
   display: block;
   background-color: #00000069;
   border-radius: 20vw;
+  -webkit-animation: rollout 1s;
+          animation: rollout 1s;
 }
 
 .article:nth-of-type(3):hover .article__link .article__content {
@@ -144,14 +192,16 @@
 }
 
 .article:nth-of-type(4) {
-  background-image: url("../images/pureemarchawkowe.jpg");
+  background-image: url("../images/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg");
   background-size: 150%;
   background-position: 40% 34%;
-  width: 20vw;
-  height: 20vw;
+  width: 15vw;
+  height: 15vw;
   display: block;
   border-radius: 20vw;
   position: relative;
+  -webkit-animation: rollin 1s;
+          animation: rollin 1s;
 }
 
 .article:nth-of-type(4) .article__link {
@@ -159,22 +209,20 @@
 }
 
 .article:nth-of-type(4):hover {
-  background-image: url("../images/pureemarchawkowe.jpg");
-  background-size: 150%;
-  background-position: 40% 34%;
   width: 40vw;
-  height: 20vw;
-  display: block;
-  border-radius: 20vw;
-  position: relative;
+  height: 15vw;
+  -webkit-animation: rollout 1s;
+          animation: rollout 1s;
 }
 
 .article:nth-of-type(4):hover .article__link {
   width: 40vw;
-  height: 20vw;
+  height: 15vw;
   display: block;
   background-color: #00000069;
   border-radius: 20vw;
+  -webkit-animation: rollout 1s;
+          animation: rollout 1s;
 }
 
 .article:nth-of-type(4):hover .article__link .article__content {
@@ -274,6 +322,8 @@
           align-items: center;
   position: -webkit-sticky;
   position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .navigation .navigation__pagetitle {
@@ -325,9 +375,12 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  padding: 3vw;
 }
 
 .section {
+  margin: 1vw;
+  padding: 2vw;
   width: 75vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -342,6 +395,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #628b8fb4;
+  -webkit-box-shadow: 0 8px 32px 0 #628B8F;
+          box-shadow: 0 8px 32px 0 #628B8F;
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
 }
 
 .section .section__title {
@@ -354,10 +413,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -365,8 +424,6 @@
       -ms-flex-align: center;
           align-items: center;
   width: 40vw;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .section .section__link {

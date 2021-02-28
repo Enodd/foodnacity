@@ -46,6 +46,8 @@
     @include wymiary(100%, 7vw);
     @include simpleflex(row, space-evenly, center);
     position: sticky;
+    top:0;
+    z-index: 10;
     .navigation__pagetitle{
         flex-grow: 0.7;
         font-family:$sans;

@@ -1,26 +1,45 @@
 @import "../mixins/_mixins.scss";
 @import "../variables/_variables.scss";
+
+@keyframes rollout{
+    from{
+        @include wymiary(15vw, 15vw);
+    }
+    to{
+        @include wymiary(40vw, 15vw);
+    }
+}
+
+@keyframes rollin{
+    from{
+        @include wymiary(40vw, 15vw);
+    }
+    to{
+        @include wymiary(15vw, 15vw);
+    }
+}
+
+.article{
+    margin: 0.5vw;
+}
 .article:nth-of-type(1){
     background-image: url("../images/pureemarchawkowe.jpg");
     background-size: 150%;
     background-position: 40% 34%;
-    @include wymiary(20vw, 20vw);
+    @include wymiary(15vw, 15vw);
     display: block;
     border-radius: 20vw;
     position: relative;
+    animation: rollin 1s;
     .article__link{
         display: none;
     }
 }.article:nth-of-type(1):hover{
-    background-image: url("../images/pureemarchawkowe.jpg");
-    background-size: 150%;
-    background-position: 40% 34%;
-    @include wymiary(40vw, 20vw);
-    display: block;
-    border-radius: 20vw;
-    position: relative;
+    @include wymiary(40vw, 15vw);
+    animation: rollout 1s;
     .article__link{
-        @include wymiary(40vw, 20vw);
+        animation: rollout 1s;
+        @include wymiary(40vw, 15vw);
         display: block;
         background-color: #00000069;
         border-radius: 20vw;
@@ -37,29 +56,27 @@
     }
 }
 .article:nth-of-type(2){
-    background-image: url("../images/pureemarchawkowe.jpg");
+    background-image: url("../images/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg");
     background-size: 150%;
     background-position: 40% 34%;
-    @include wymiary(20vw, 20vw);
+    @include wymiary(15vw, 15vw);
     display: block;
     border-radius: 20vw;
     position: relative;
+    animation: rollin 1s;
     .article__link{
         display: none;
     }
-}.article:nth-of-type(2):hover{
-    background-image: url("../images/pureemarchawkowe.jpg");
-    background-size: 150%;
-    background-position: 40% 34%;
-    @include wymiary(40vw, 20vw);
-    display: block;
-    border-radius: 20vw;
-    position: relative;
+}
+.article:nth-of-type(2):hover{
+    @include wymiary(40vw, 15vw);
+    animation: rollout 1s;
     .article__link{
-        @include wymiary(40vw, 20vw);
+        @include wymiary(40vw, 15vw);
         display: block;
         background-color: #00000069;
         border-radius: 20vw;
+        animation: rollout 1s;
         .article__content{
             text-decoration: none;
             position: absolute;
@@ -73,29 +90,27 @@
     }
 }
 .article:nth-of-type(3){
-    background-image: url("../images/pureemarchawkowe.jpg");
+    background-image: url("../images/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg");
     background-size: 150%;
     background-position: 40% 34%;
-    @include wymiary(20vw, 20vw);
+    @include wymiary(15vw, 15vw);
     display: block;
     border-radius: 20vw;
     position: relative;
+    animation: rollin 1s;
     .article__link{
         display: none;
     }
-}.article:nth-of-type(3):hover{
-    background-image: url("../images/pureemarchawkowe.jpg");
-    background-size: 150%;
-    background-position: 40% 34%;
-    @include wymiary(40vw, 20vw);
-    display: block;
-    border-radius: 20vw;
-    position: relative;
+}
+.article:nth-of-type(3):hover{
+    @include wymiary(40vw, 15vw);
+    animation: rollout 1s;
     .article__link{
-        @include wymiary(40vw, 20vw);
+        @include wymiary(40vw, 15vw);
         display: block;
         background-color: #00000069;
         border-radius: 20vw;
+        animation: rollout 1s;
         .article__content{
             text-decoration: none;
             position: absolute;
@@ -109,29 +124,27 @@
     }
 }
 .article:nth-of-type(4){
-    background-image: url("../images/pureemarchawkowe.jpg");
+    background-image: url("../images/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg");
     background-size: 150%;
     background-position: 40% 34%;
-    @include wymiary(20vw, 20vw);
+    @include wymiary(15vw, 15vw);
     display: block;
     border-radius: 20vw;
     position: relative;
+    animation: rollin 1s;
     .article__link{
         display: none;
     }
-}.article:nth-of-type(4):hover{
-    background-image: url("../images/pureemarchawkowe.jpg");
-    background-size: 150%;
-    background-position: 40% 34%;
-    @include wymiary(40vw, 20vw);
-    display: block;
-    border-radius: 20vw;
-    position: relative;
+}
+.article:nth-of-type(4):hover{
+    @include wymiary(40vw, 15vw);
+    animation: rollout 1s;
     .article__link{
-        @include wymiary(40vw, 20vw);
+        @include wymiary(40vw, 15vw);
         display: block;
         background-color: #00000069;
         border-radius: 20vw;
+        animation: rollout 1s;
         .article__content{
             text-decoration: none;
             position: absolute;
