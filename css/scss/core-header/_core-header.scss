@@ -45,13 +45,26 @@
     background-color: $blue;
     @include wymiary(100%, 7vw);
     @include simpleflex(row, space-evenly, center);
+    position: sticky;
     .navigation__pagetitle{
         flex-grow: 0.7;
         font-family:$sans;
         font-size:3vw;
+        color:white;
     }
     .navigation__menu{
         @include simpleflex(row, center, center);
+    }
+    .menu{
+        .menu__element{
+            .menu__link{
+                text-decoration: none;
+                color:white;
+                font-family: $sans;
+                margin: 0.3em;
+                font-size: 2vw;
+            }
+        }
     }
 }
 // .core-header--subsite{}

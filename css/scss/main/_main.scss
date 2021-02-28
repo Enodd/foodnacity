@@ -1,0 +1,31 @@
+.main{
+    background-image: url("../images/jon-moore-5fIoyoKlz7A-unsplash.jpg");
+    @include simpleflex(column, center,center);
+    width: 100%;
+}
+.section{
+    width: 75vw;
+    @include simpleflex(column, center, center);
+    .section__title{
+        font-size: 2vw;
+        font-family: $sans;
+        color:$light-orange;
+    }
+    .section__articlesection{
+        @include simpleflex(row, center,center);
+        width:40vw;
+        flex-wrap: wrap;
+    }
+    .section__link{
+        text-decoration: underline;
+        font-family:$sans;
+        font-size: 1.4vw;
+        color:$light-orange;
+
+    }
+}
+.underline{
+    width: 13vw;
+    border-bottom: 0.2vw $light-orange solid;
+    margin-bottom: 0.9vw;
+}

@@ -1,12 +1,15 @@
 @import "reset/_reset.scss";
 @import "article/_article.scss";
 @import "core-header/_core-header.scss";
+@import "main/_main.scss";
 @import "mixins/mixins";
 
 .container{
     width: 100%;
     @include simpleflex(column, center,center);
 }
-.main{
-    width: 90vw;
+.menu{
+    .menu__element{
+        list-style: none;
+    }
 }
