@@ -9,7 +9,6 @@
         @include wymiary(40vw, 15vw);
     }
 }
-
 @keyframes rollin{
     from{
         @include wymiary(40vw, 15vw);
@@ -21,9 +20,65 @@
 
 .article{
     margin: 0.5vw;
+    border-radius: 20vw;
+    background-size: 150%;
+    background-position: 40% 34%;
+    @include wymiary(40vw, 20vw);
+    position:relative;
+    .article__link{
+        @include wymiary(40vw, 20vw);
+        display: block;
+        background-color: #00000083;
+        border-radius: 20vw;
+        position:relative;
+        .article__content{
+            text-decoration: none;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            color: $light-orange;
+            font-family: $sans;
+            font-size: 3.5vw;
+        }
+    }
+    &--sub{
+        width:80%;
+        .article__img{
+            @include wymiary(20vw,20vw);
+            background-size: 150%;
+            background-position: 40% 34%;
+            border-radius: 20vw;
+        }
+        .article__img:nth-of-type(1){
+            background-image: url("../images/pureemarchawkowe.jpg");
+        }
+        .article__img:nth-of-type(2){
+            background-image: url("../images/pureemarchawkowe.jpg");
+        }
+        .article__img:nth-of-type(3){
+            background-image: url("../images/pureemarchawkowe.jpg");
+        }
+        .article__img:nth-of-type(4){
+            background-image: url("../images/pureemarchawkowe.jpg");
+        }
+    }
 }
 .article:nth-of-type(1){
     background-image: url("../images/pureemarchawkowe.jpg");
+}
+.article:nth-of-type(2){
+    background-image: url("../images/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg");
+}
+.article:nth-of-type(3){
+    background-image: url("../images/asnim-ansari-SqYmTDQYMjo-unsplash.jpg");
+}
+.article:nth-of-type(4){
+    background-image: url("../images/ella-olsson-fxJTl_gDh28-unsplash.jpg");
+}
+@media(min-width:1200px){
+.article{
+    margin: 0.5vw;
     background-size: 150%;
     background-position: 40% 34%;
     @include wymiary(15vw, 15vw);
@@ -34,6 +89,31 @@
     .article__link{
         display: none;
     }
+    &--sub{
+        width:80%;
+        .article__img{
+            @include wymiary(15vw,15vw);
+            background-size: 150%;
+            background-position: 40% 34%;
+            border-radius: 20vw;
+        }
+        .article__img:nth-of-type(1){
+            background-image: url("../images/pureemarchawkowe.jpg");
+        }
+        .article__img:nth-of-type(2){
+            background-image: url("../images/pureemarchawkowe.jpg");
+        }
+        .article__img:nth-of-type(3){
+            background-image: url("../images/pureemarchawkowe.jpg");
+        }
+        .article__img:nth-of-type(4){
+            background-image: url("../images/pureemarchawkowe.jpg");
+        }
+    }
+}
+.article:nth-of-type(1){
+    background-image: url("../images/pureemarchawkowe.jpg");
+    
 }.article:nth-of-type(1):hover{
     @include wymiary(40vw, 15vw);
     animation: rollout 1s;
@@ -41,7 +121,7 @@
         animation: rollout 1s;
         @include wymiary(40vw, 15vw);
         display: block;
-        background-color: #00000069;
+        background-color: #00000083;
         border-radius: 20vw;
         .article__content{
             text-decoration: none;
@@ -57,16 +137,6 @@
 }
 .article:nth-of-type(2){
     background-image: url("../images/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg");
-    background-size: 150%;
-    background-position: 40% 34%;
-    @include wymiary(15vw, 15vw);
-    display: block;
-    border-radius: 20vw;
-    position: relative;
-    animation: rollin 1s;
-    .article__link{
-        display: none;
-    }
 }
 .article:nth-of-type(2):hover{
     @include wymiary(40vw, 15vw);
@@ -74,7 +144,7 @@
     .article__link{
         @include wymiary(40vw, 15vw);
         display: block;
-        background-color: #00000069;
+        background-color: #00000083;
         border-radius: 20vw;
         animation: rollout 1s;
         .article__content{
@@ -90,17 +160,7 @@
     }
 }
 .article:nth-of-type(3){
-    background-image: url("../images/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg");
-    background-size: 150%;
-    background-position: 40% 34%;
-    @include wymiary(15vw, 15vw);
-    display: block;
-    border-radius: 20vw;
-    position: relative;
-    animation: rollin 1s;
-    .article__link{
-        display: none;
-    }
+    background-image: url("../images/asnim-ansari-SqYmTDQYMjo-unsplash.jpg");
 }
 .article:nth-of-type(3):hover{
     @include wymiary(40vw, 15vw);
@@ -108,7 +168,7 @@
     .article__link{
         @include wymiary(40vw, 15vw);
         display: block;
-        background-color: #00000069;
+        background-color: #00000083;
         border-radius: 20vw;
         animation: rollout 1s;
         .article__content{
@@ -124,17 +184,7 @@
     }
 }
 .article:nth-of-type(4){
-    background-image: url("../images/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg");
-    background-size: 150%;
-    background-position: 40% 34%;
-    @include wymiary(15vw, 15vw);
-    display: block;
-    border-radius: 20vw;
-    position: relative;
-    animation: rollin 1s;
-    .article__link{
-        display: none;
-    }
+    background-image: url("../images/ella-olsson-fxJTl_gDh28-unsplash.jpg");
 }
 .article:nth-of-type(4):hover{
     @include wymiary(40vw, 15vw);
@@ -142,7 +192,7 @@
     .article__link{
         @include wymiary(40vw, 15vw);
         display: block;
-        background-color: #00000069;
+        background-color: #00000083;
         border-radius: 20vw;
         animation: rollout 1s;
         .article__content{
@@ -156,4 +206,5 @@
             font-size: 1.5vw;
         }
     }
+}
 }

@@ -51,197 +51,240 @@
 
 .article {
   margin: 0.5vw;
+  border-radius: 20vw;
+  background-size: 150%;
+  background-position: 40% 34%;
+  width: 40vw;
+  height: 20vw;
+  position: relative;
+}
+
+.article .article__link {
+  width: 40vw;
+  height: 20vw;
+  display: block;
+  background-color: #00000083;
+  border-radius: 20vw;
+  position: relative;
+}
+
+.article .article__link .article__content {
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #EFA754;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3.5vw;
+}
+
+.article--sub {
+  width: 80%;
+}
+
+.article--sub .article__img {
+  width: 20vw;
+  height: 20vw;
+  background-size: 150%;
+  background-position: 40% 34%;
+  border-radius: 20vw;
+}
+
+.article--sub .article__img:nth-of-type(1) {
+  background-image: url("../images/pureemarchawkowe.jpg");
+}
+
+.article--sub .article__img:nth-of-type(2) {
+  background-image: url("../images/pureemarchawkowe.jpg");
+}
+
+.article--sub .article__img:nth-of-type(3) {
+  background-image: url("../images/pureemarchawkowe.jpg");
+}
+
+.article--sub .article__img:nth-of-type(4) {
+  background-image: url("../images/pureemarchawkowe.jpg");
 }
 
 .article:nth-of-type(1) {
   background-image: url("../images/pureemarchawkowe.jpg");
-  background-size: 150%;
-  background-position: 40% 34%;
-  width: 15vw;
-  height: 15vw;
-  display: block;
-  border-radius: 20vw;
-  position: relative;
-  -webkit-animation: rollin 1s;
-          animation: rollin 1s;
-}
-
-.article:nth-of-type(1) .article__link {
-  display: none;
-}
-
-.article:nth-of-type(1):hover {
-  width: 40vw;
-  height: 15vw;
-  -webkit-animation: rollout 1s;
-          animation: rollout 1s;
-}
-
-.article:nth-of-type(1):hover .article__link {
-  -webkit-animation: rollout 1s;
-          animation: rollout 1s;
-  width: 40vw;
-  height: 15vw;
-  display: block;
-  background-color: #00000069;
-  border-radius: 20vw;
-}
-
-.article:nth-of-type(1):hover .article__link .article__content {
-  text-decoration: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #EFA754;
-  font-family: "Bebas Neue", cursive;
-  font-size: 1.5vw;
 }
 
 .article:nth-of-type(2) {
   background-image: url("../images/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg");
-  background-size: 150%;
-  background-position: 40% 34%;
-  width: 15vw;
-  height: 15vw;
-  display: block;
-  border-radius: 20vw;
-  position: relative;
-  -webkit-animation: rollin 1s;
-          animation: rollin 1s;
-}
-
-.article:nth-of-type(2) .article__link {
-  display: none;
-}
-
-.article:nth-of-type(2):hover {
-  width: 40vw;
-  height: 15vw;
-  -webkit-animation: rollout 1s;
-          animation: rollout 1s;
-}
-
-.article:nth-of-type(2):hover .article__link {
-  width: 40vw;
-  height: 15vw;
-  display: block;
-  background-color: #00000069;
-  border-radius: 20vw;
-  -webkit-animation: rollout 1s;
-          animation: rollout 1s;
-}
-
-.article:nth-of-type(2):hover .article__link .article__content {
-  text-decoration: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #EFA754;
-  font-family: "Bebas Neue", cursive;
-  font-size: 1.5vw;
 }
 
 .article:nth-of-type(3) {
-  background-image: url("../images/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg");
-  background-size: 150%;
-  background-position: 40% 34%;
-  width: 15vw;
-  height: 15vw;
-  display: block;
-  border-radius: 20vw;
-  position: relative;
-  -webkit-animation: rollin 1s;
-          animation: rollin 1s;
-}
-
-.article:nth-of-type(3) .article__link {
-  display: none;
-}
-
-.article:nth-of-type(3):hover {
-  width: 40vw;
-  height: 15vw;
-  -webkit-animation: rollout 1s;
-          animation: rollout 1s;
-}
-
-.article:nth-of-type(3):hover .article__link {
-  width: 40vw;
-  height: 15vw;
-  display: block;
-  background-color: #00000069;
-  border-radius: 20vw;
-  -webkit-animation: rollout 1s;
-          animation: rollout 1s;
-}
-
-.article:nth-of-type(3):hover .article__link .article__content {
-  text-decoration: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #EFA754;
-  font-family: "Bebas Neue", cursive;
-  font-size: 1.5vw;
+  background-image: url("../images/asnim-ansari-SqYmTDQYMjo-unsplash.jpg");
 }
 
 .article:nth-of-type(4) {
-  background-image: url("../images/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg");
-  background-size: 150%;
-  background-position: 40% 34%;
-  width: 15vw;
-  height: 15vw;
-  display: block;
-  border-radius: 20vw;
-  position: relative;
-  -webkit-animation: rollin 1s;
-          animation: rollin 1s;
+  background-image: url("../images/ella-olsson-fxJTl_gDh28-unsplash.jpg");
 }
 
-.article:nth-of-type(4) .article__link {
-  display: none;
-}
-
-.article:nth-of-type(4):hover {
-  width: 40vw;
-  height: 15vw;
-  -webkit-animation: rollout 1s;
-          animation: rollout 1s;
-}
-
-.article:nth-of-type(4):hover .article__link {
-  width: 40vw;
-  height: 15vw;
-  display: block;
-  background-color: #00000069;
-  border-radius: 20vw;
-  -webkit-animation: rollout 1s;
-          animation: rollout 1s;
-}
-
-.article:nth-of-type(4):hover .article__link .article__content {
-  text-decoration: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #EFA754;
-  font-family: "Bebas Neue", cursive;
-  font-size: 1.5vw;
+@media (min-width: 1200px) {
+  .article {
+    margin: 0.5vw;
+    background-size: 150%;
+    background-position: 40% 34%;
+    width: 15vw;
+    height: 15vw;
+    display: block;
+    border-radius: 20vw;
+    position: relative;
+    -webkit-animation: rollin 1s;
+            animation: rollin 1s;
+  }
+  .article .article__link {
+    display: none;
+  }
+  .article--sub {
+    width: 80%;
+  }
+  .article--sub .article__img {
+    width: 15vw;
+    height: 15vw;
+    background-size: 150%;
+    background-position: 40% 34%;
+    border-radius: 20vw;
+  }
+  .article--sub .article__img:nth-of-type(1) {
+    background-image: url("../images/pureemarchawkowe.jpg");
+  }
+  .article--sub .article__img:nth-of-type(2) {
+    background-image: url("../images/pureemarchawkowe.jpg");
+  }
+  .article--sub .article__img:nth-of-type(3) {
+    background-image: url("../images/pureemarchawkowe.jpg");
+  }
+  .article--sub .article__img:nth-of-type(4) {
+    background-image: url("../images/pureemarchawkowe.jpg");
+  }
+  .article:nth-of-type(1) {
+    background-image: url("../images/pureemarchawkowe.jpg");
+  }
+  .article:nth-of-type(1):hover {
+    width: 40vw;
+    height: 15vw;
+    -webkit-animation: rollout 1s;
+            animation: rollout 1s;
+  }
+  .article:nth-of-type(1):hover .article__link {
+    -webkit-animation: rollout 1s;
+            animation: rollout 1s;
+    width: 40vw;
+    height: 15vw;
+    display: block;
+    background-color: #00000083;
+    border-radius: 20vw;
+  }
+  .article:nth-of-type(1):hover .article__link .article__content {
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #EFA754;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.5vw;
+  }
+  .article:nth-of-type(2) {
+    background-image: url("../images/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg");
+  }
+  .article:nth-of-type(2):hover {
+    width: 40vw;
+    height: 15vw;
+    -webkit-animation: rollout 1s;
+            animation: rollout 1s;
+  }
+  .article:nth-of-type(2):hover .article__link {
+    width: 40vw;
+    height: 15vw;
+    display: block;
+    background-color: #00000083;
+    border-radius: 20vw;
+    -webkit-animation: rollout 1s;
+            animation: rollout 1s;
+  }
+  .article:nth-of-type(2):hover .article__link .article__content {
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #EFA754;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.5vw;
+  }
+  .article:nth-of-type(3) {
+    background-image: url("../images/asnim-ansari-SqYmTDQYMjo-unsplash.jpg");
+  }
+  .article:nth-of-type(3):hover {
+    width: 40vw;
+    height: 15vw;
+    -webkit-animation: rollout 1s;
+            animation: rollout 1s;
+  }
+  .article:nth-of-type(3):hover .article__link {
+    width: 40vw;
+    height: 15vw;
+    display: block;
+    background-color: #00000083;
+    border-radius: 20vw;
+    -webkit-animation: rollout 1s;
+            animation: rollout 1s;
+  }
+  .article:nth-of-type(3):hover .article__link .article__content {
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #EFA754;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.5vw;
+  }
+  .article:nth-of-type(4) {
+    background-image: url("../images/ella-olsson-fxJTl_gDh28-unsplash.jpg");
+  }
+  .article:nth-of-type(4):hover {
+    width: 40vw;
+    height: 15vw;
+    -webkit-animation: rollout 1s;
+            animation: rollout 1s;
+  }
+  .article:nth-of-type(4):hover .article__link {
+    width: 40vw;
+    height: 15vw;
+    display: block;
+    background-color: #00000083;
+    border-radius: 20vw;
+    -webkit-animation: rollout 1s;
+            animation: rollout 1s;
+  }
+  .article:nth-of-type(4):hover .article__link .article__content {
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #EFA754;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.5vw;
+  }
 }
 
 .core-header {
   width: 100%;
   height: 100vh;
   background-image: url("../images/monika-grabkowska-P1aohbiT-EY-unsplash.jpg");
-  background-size: cover;
+  background-size: 150%;
   background-position: 0vw -50vw;
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -277,36 +320,36 @@
   font-family: "Bebas Neue", cursive;
   color: white;
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) rotate(-5deg);
-          transform: translate(-50%, -50%) rotate(-5deg);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .core-header .core-header__titlesection .core-header__link:nth-of-type(1) {
   font-family: "Bebas Neue", cursive;
-  font-size: 5vw;
+  font-size: 15vw;
   color: white;
   position: absolute;
-  top: 20%;
-  left: 10%;
+  top: 35%;
+  left: 30%;
   text-decoration: none;
 }
 
 .core-header .core-header__titlesection .core-header__link:nth-of-type(2) {
   font-family: "Bebas Neue", cursive;
-  font-size: 5vw;
+  font-size: 15vw;
   color: white;
   position: absolute;
   bottom: 20%;
-  right: 10%;
+  right: 26%;
   text-decoration: none;
 }
 
 .navigation {
   background-color: #93BCC1;
   width: 100%;
-  height: 7vw;
+  height: 13vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,7 +374,7 @@
       -ms-flex-positive: 0.7;
           flex-grow: 0.7;
   font-family: "Bebas Neue", cursive;
-  font-size: 3vw;
+  font-size: 5vw;
   color: white;
 }
 
@@ -356,7 +399,88 @@
   color: white;
   font-family: "Bebas Neue", cursive;
   margin: 0.3em;
-  font-size: 2vw;
+  font-size: 3vw;
+  list-style: none;
+}
+
+.core-header--subsite {
+  width: 100%;
+  height: 13vw;
+}
+
+@media (min-width: 1200px) {
+  .core-header {
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  .core-header .core-header__titlesection {
+    width: 94.5vw;
+    height: 90vh;
+  }
+  .core-header .core-header__titlesection .core-header__title {
+    font-size: 20vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(-5deg);
+            transform: translate(-50%, -50%) rotate(-5deg);
+  }
+  .core-header .core-header__titlesection .core-header__link:nth-of-type(1) {
+    font-size: 5vw;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+  }
+  .core-header .core-header__titlesection .core-header__link:nth-of-type(2) {
+    font-size: 5vw;
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+  }
+  .navigation {
+    width: 100%;
+    height: 7vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navigation .navigation__pagetitle {
+    font-size: 3vw;
+  }
+  .navigation .navigation__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navigation .menu .menu__element .menu__link {
+    margin: 0.3em;
+    font-size: 2vw;
+  }
+  .core-header--subsite {
+    width: 100%;
+    height: 7vw;
+  }
 }
 
 .main {
@@ -380,7 +504,7 @@
 
 .section {
   margin: 1vw;
-  padding: 2vw;
+  padding: 5vw;
   width: 75vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -404,7 +528,7 @@
 }
 
 .section .section__title {
-  font-size: 2vw;
+  font-size: 4vw;
   font-family: "Bebas Neue", cursive;
   color: #EFA754;
 }
@@ -424,19 +548,83 @@
       -ms-flex-align: center;
           align-items: center;
   width: 40vw;
+  margin-bottom: 1vw;
 }
 
 .section .section__link {
   text-decoration: underline;
   font-family: "Bebas Neue", cursive;
-  font-size: 1.4vw;
+  font-size: 3vw;
   color: #EFA754;
+}
+
+.section .section__content {
+  color: white;
+  font-family: "Source Serif Pro", serif;
+  font-size: 2.5vw;
 }
 
 .underline {
   width: 13vw;
   border-bottom: 0.2vw #EFA754 solid;
   margin-bottom: 0.9vw;
+}
+
+@media (min-width: 1200px) {
+  .section .section__title {
+    font-size: 2vw;
+  }
+  .section .section__articlesection {
+    width: 40vw;
+  }
+  .section .section__link {
+    font-size: 1.4vw;
+  }
+  .section .section__content {
+    font-size: 1vw;
+  }
+  .underline {
+    width: 13vw;
+    border-bottom: 0.2vw #EFA754 solid;
+    margin-bottom: 0.9vw;
+  }
+}
+
+.core-footer {
+  width: 100%;
+  height: 13vw;
+  background-color: #93BCC1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.core-footer .core-footer__content {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  margin: 0.3em;
+  font-size: 4vw;
+}
+
+@media (min-width: 1200px) {
+  .core-footer {
+    width: 100%;
+    height: 7vw;
+  }
+  .core-footer .core-footer__content {
+    margin: 0.3em;
+    font-size: 2vw;
+  }
 }
 
 .container {

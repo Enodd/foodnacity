@@ -1,0 +1,23 @@
+@import "../mixins/_mixins.scss";
+@import "../variables/_variables.scss";
+
+.core-footer{
+    @include wymiary(100%, 13vw);
+    background-color: $blue;
+    @include simpleflex(column, center, center);
+    .core-footer__content{
+        color:white;
+        font-family: $sans;
+        margin: 0.3em;
+        font-size: 4vw;
+    }
+}
+@media(min-width:1200px){   
+.core-footer{
+    @include wymiary(100%, 7vw);
+    .core-footer__content{
+        margin: 0.3em;
+        font-size: 2vw;
+    }
+}
+}
