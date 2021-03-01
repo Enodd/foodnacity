@@ -59,7 +59,7 @@
   position: relative;
 }
 
-.article .article__link {
+.article__link {
   width: 40vw;
   height: 20vw;
   display: block;
@@ -68,7 +68,7 @@
   position: relative;
 }
 
-.article .article__link .article__content {
+.article__content {
   text-decoration: underline;
   position: absolute;
   top: 50%;
@@ -225,7 +225,7 @@
   position: relative;
 }
 
-.core-header .core-header__titlesection {
+.core-header__titlesection {
   width: 94.5vw;
   height: 90vh;
   background: #628b8fb4;
@@ -237,7 +237,7 @@
   position: relative;
 }
 
-.core-header .core-header__titlesection .core-header__title {
+.core-header__titlesection .core-header__title {
   font-size: 20vw;
   font-family: "Bebas Neue", cursive;
   color: white;
@@ -248,7 +248,7 @@
           transform: translate(-50%, -50%);
 }
 
-.core-header .core-header__titlesection .core-header__link:nth-of-type(1) {
+.core-header__titlesection .core-header__link:nth-of-type(1) {
   font-family: "Bebas Neue", cursive;
   font-size: 15vw;
   color: white;
@@ -258,7 +258,7 @@
   text-decoration: none;
 }
 
-.core-header .core-header__titlesection .core-header__link:nth-of-type(2) {
+.core-header__titlesection .core-header__link:nth-of-type(2) {
   font-family: "Bebas Neue", cursive;
   font-size: 15vw;
   color: white;
@@ -266,6 +266,11 @@
   bottom: 20%;
   right: 26%;
   text-decoration: none;
+}
+
+.core-header--subsite {
+  width: 100%;
+  height: 13vw;
 }
 
 .navigation {
@@ -291,7 +296,7 @@
   z-index: 10;
 }
 
-.navigation .navigation__pagetitle {
+.navigation__pagetitle {
   -webkit-box-flex: 0.7;
       -ms-flex-positive: 0.7;
           flex-grow: 0.7;
@@ -300,7 +305,7 @@
   color: white;
 }
 
-.navigation .navigation__menu {
+.navigation__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,7 +321,7 @@
           align-items: center;
 }
 
-.navigation .menu .menu__element .menu__link {
+.navigation .menu__element .menu__link {
   text-decoration: none;
   color: white;
   font-family: "Bebas Neue", cursive;
@@ -336,11 +341,11 @@
     width: 100%;
     height: 100vh;
   }
-  .core-header .core-header__titlesection {
+  .core-header__titlesection {
     width: 94.5vw;
     height: 90vh;
   }
-  .core-header .core-header__titlesection .core-header__title {
+  .core-header__titlesection .core-header__title {
     font-size: 20vw;
     position: absolute;
     top: 50%;
@@ -348,17 +353,21 @@
     -webkit-transform: translate(-50%, -50%) rotate(-5deg);
             transform: translate(-50%, -50%) rotate(-5deg);
   }
-  .core-header .core-header__titlesection .core-header__link:nth-of-type(1) {
+  .core-header__titlesection .core-header__link:nth-of-type(1) {
     font-size: 5vw;
     position: absolute;
     top: 20%;
     left: 10%;
   }
-  .core-header .core-header__titlesection .core-header__link:nth-of-type(2) {
+  .core-header__titlesection .core-header__link:nth-of-type(2) {
     font-size: 5vw;
     position: absolute;
     bottom: 20%;
     right: 10%;
+  }
+  .core-header--subsite {
+    width: 100%;
+    height: 7vw;
   }
   .navigation {
     width: 100%;
@@ -377,10 +386,10 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .navigation .navigation__pagetitle {
+  .navigation__pagetitle {
     font-size: 3vw;
   }
-  .navigation .navigation__menu {
+  .navigation__menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -395,13 +404,9 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .navigation .menu .menu__element .menu__link {
+  .navigation .menu__element .menu__link {
     margin: 0.3em;
     font-size: 2vw;
-  }
-  .core-header--subsite {
-    width: 100%;
-    height: 7vw;
   }
 }
 
@@ -531,7 +536,7 @@
           align-items: center;
 }
 
-.core-footer .core-footer__content {
+.core-footer__content {
   color: white;
   font-family: "Bebas Neue", cursive;
   margin: 0.3em;
@@ -543,7 +548,7 @@
     width: 100%;
     height: 7vw;
   }
-  .core-footer .core-footer__content {
+  .core-footer__content {
     margin: 0.3em;
     font-size: 2vw;
   }

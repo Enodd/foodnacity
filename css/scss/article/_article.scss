@@ -25,22 +25,22 @@
     background-position: 40% 34%;
     @include wymiary(40vw, 20vw);
     position:relative;
-    .article__link{
+    &__link{
         @include wymiary(40vw, 20vw);
         display: block;
         background-color: #00000083;
         border-radius: 20vw;
         position:relative;
-        .article__content{
-            text-decoration: underline;
-            position: absolute;
-            top:50%;
-            left:50%;
-            transform: translate(-50%, -50%);
-            color: $light-orange;
-            font-family: $sans;
-            font-size: 3.5vw;
-        }
+    }
+    &__content{
+        text-decoration: underline;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        color: $light-orange;
+        font-family: $sans;
+        font-size: 3.5vw;
     }
     &--sub{
         width:80%;

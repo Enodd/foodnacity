@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     @include simpleflex(column, center, center);
     position: relative;
-    .core-header__titlesection{
+    &__titlesection{
         @include wymiary(94.5vw, 90vh);
         @include glassmorph(#628b8fb4, 4.5px, $dark-blue);
         position:relative;
@@ -42,6 +42,9 @@
             text-decoration: none;
         }   
     }
+    &--subsite{
+        @include wymiary(100%, 13vw);
+    }
 }
 .navigation{
     background-color: $blue;
@@ -50,17 +53,17 @@
     position: sticky;
     top:0;
     z-index: 10;
-    .navigation__pagetitle{
+    &__pagetitle{
         flex-grow: 0.7;
         font-family:$sans;
         font-size:5vw;
         color:white;
     }
-    .navigation__menu{
+    &__menu{
         @include simpleflex(row, center, center);
     }
     .menu{
-        .menu__element{
+        &__element{
             .menu__link{
                 text-decoration: none;
                 color:white;
@@ -71,6 +74,7 @@
             }
         }
     }
+
 }
 .core-header--subsite{
     @include wymiary(100%, 13vw);
@@ -79,7 +83,7 @@
     .core-header{
         background-size: cover;
         @include wymiary(100%, 100vh);
-        .core-header__titlesection{
+        &__titlesection{
             @include wymiary(94.5vw, 90vh);
             .core-header__title{
                 font-size:20vw;
@@ -101,26 +105,26 @@
                 right: 10%;
             }   
         }
+        &--subsite{
+            @include wymiary(100%, 7vw);
+        }
     }
     .navigation{
         @include wymiary(100%, 7vw);
         @include simpleflex(row, space-evenly, center);
-        .navigation__pagetitle{
+        &__pagetitle{
             font-size:3vw;
         }
-        .navigation__menu{
+        &__menu{
             @include simpleflex(row, center, center);
         }
         .menu{
-            .menu__element{
+            &__element{
                 .menu__link{
                     margin: 0.3em;
                     font-size: 2vw;
                 }
             }
         }
-    }
-    .core-header--subsite{
-        @include wymiary(100%, 7vw);
     }
 }

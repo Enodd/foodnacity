@@ -4,6 +4,7 @@
 @import "main/_main.scss";
 @import "mixins/mixins";
 @import "core-footer/_core-footer.scss";
+
 .container{
     width: 100%;
     @include simpleflex(column, center,center);
