@@ -13,35 +13,34 @@
         @include wymiary(94.5vw, 90vh);
         @include glassmorph(#628b8fb4, 4.5px, $dark-blue);
         position:relative;
-        .core-header__title{
-            font-size:20vw;
-            font-family: $sans;
-            color:white;
-            position:absolute;
-            top:20%;
-            left:50%;
-            transform:translate(-50%, -50%);
+    }    
+    &__title{
+        font-size:20vw;
+        font-family: $sans;
+        color:white;
+        position:absolute;
+        top:20%;
+        left:50%;
+        transform:translate(-50%, -50%);
+    }    
+    &__link:nth-of-type(1){
+        font-family: $sans;
+        font-size: 15vw;
+        color:white;
+        position:absolute;
+        top:35%;
+        left: 30%;
+        text-decoration: none;
         }
-        
-        .core-header__link:nth-of-type(1){
-            font-family: $sans;
-            font-size: 15vw;
-            color:white;
-            position:absolute;
-            top:35%;
-            left: 30%;
-            text-decoration: none;
-        }
-        .core-header__link:nth-of-type(2){
-            font-family: $sans;
-            font-size: 15vw;
-            color:white;
-            position:absolute;
-            bottom:20%;
-            right: 26%;
-            text-decoration: none;
-        }   
-    }
+    &__link:nth-of-type(2){
+        font-family: $sans;
+        font-size: 15vw;
+        color:white;
+        position:absolute;
+        bottom:20%;
+        right: 26%;
+        text-decoration: none;
+    }   
     &--subsite{
         @include wymiary(100%, 13vw);
     }
@@ -63,21 +62,15 @@
         @include simpleflex(row, center, center);
     }
     .menu{
-        &__element{
-            .menu__link{
-                text-decoration: none;
-                color:white;
-                font-family: $sans;
-                margin: 0.3em;
-                font-size: 3vw;
-                list-style: none;
-            }
+        &__link{
+            text-decoration: none;
+            color:white;
+            font-family: $sans;
+            margin: 0.3em;
+            font-size: 3vw;
+            list-style: none;
         }
     }
-
-}
-.core-header--subsite{
-    @include wymiary(100%, 13vw);
 }
 @media(min-width: 1200px){
     .core-header{
@@ -85,30 +78,31 @@
         @include wymiary(100%, 100vh);
         &__titlesection{
             @include wymiary(94.5vw, 90vh);
-            .core-header__title{
-                font-size:20vw;
-                position:absolute;
-                top:50%;
-                left:50%;
-                transform:translate(-50%, -50%) rotate(-5deg);
-            }
-            .core-header__link:nth-of-type(1){
-                font-size: 5vw;
-                position:absolute;
-                top:20%;
-                left: 10%;
-            }
-            .core-header__link:nth-of-type(2){
-                font-size: 5vw;
-                position:absolute;
-                bottom:20%;
-                right: 10%;
-            }   
         }
+        &__title{
+            font-size:20vw;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%, -50%) rotate(-5deg);
+        }    
+        &__link:nth-of-type(1){
+            font-size: 5vw;
+            position:absolute;
+            top:20%;
+            left: 10%;
+        }
+        &__link:nth-of-type(2){
+            font-size: 5vw;
+            position:absolute;
+            bottom:20%;
+            right: 10%;
+        }   
         &--subsite{
             @include wymiary(100%, 7vw);
         }
     }
+}
     .navigation{
         @include wymiary(100%, 7vw);
         @include simpleflex(row, space-evenly, center);
@@ -119,12 +113,9 @@
             @include simpleflex(row, center, center);
         }
         .menu{
-            &__element{
-                .menu__link{
-                    margin: 0.3em;
-                    font-size: 2vw;
-                }
+            &__link{
+                margin: 0.3em;
+                font-size: 2vw;
             }
         }
     }
-}
