@@ -69,7 +69,7 @@
 }
 
 .article .article__link .article__content {
-  text-decoration: none;
+  text-decoration: underline;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -165,13 +165,13 @@
   .article:nth-of-type(1) {
     background-image: url("../images/pureemarchawkowe.jpg");
   }
-  .article:nth-of-type(1):hover {
+  .article:hover {
     width: 40vw;
     height: 15vw;
     -webkit-animation: rollout 1s;
             animation: rollout 1s;
   }
-  .article:nth-of-type(1):hover .article__link {
+  .article:hover .article__link {
     -webkit-animation: rollout 1s;
             animation: rollout 1s;
     width: 40vw;
@@ -180,8 +180,8 @@
     background-color: #00000083;
     border-radius: 20vw;
   }
-  .article:nth-of-type(1):hover .article__link .article__content {
-    text-decoration: none;
+  .article:hover .article__link .article__content {
+    text-decoration: underline;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -194,89 +194,11 @@
   .article:nth-of-type(2) {
     background-image: url("../images/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg");
   }
-  .article:nth-of-type(2):hover {
-    width: 40vw;
-    height: 15vw;
-    -webkit-animation: rollout 1s;
-            animation: rollout 1s;
-  }
-  .article:nth-of-type(2):hover .article__link {
-    width: 40vw;
-    height: 15vw;
-    display: block;
-    background-color: #00000083;
-    border-radius: 20vw;
-    -webkit-animation: rollout 1s;
-            animation: rollout 1s;
-  }
-  .article:nth-of-type(2):hover .article__link .article__content {
-    text-decoration: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    color: #EFA754;
-    font-family: "Bebas Neue", cursive;
-    font-size: 1.5vw;
-  }
   .article:nth-of-type(3) {
     background-image: url("../images/asnim-ansari-SqYmTDQYMjo-unsplash.jpg");
   }
-  .article:nth-of-type(3):hover {
-    width: 40vw;
-    height: 15vw;
-    -webkit-animation: rollout 1s;
-            animation: rollout 1s;
-  }
-  .article:nth-of-type(3):hover .article__link {
-    width: 40vw;
-    height: 15vw;
-    display: block;
-    background-color: #00000083;
-    border-radius: 20vw;
-    -webkit-animation: rollout 1s;
-            animation: rollout 1s;
-  }
-  .article:nth-of-type(3):hover .article__link .article__content {
-    text-decoration: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    color: #EFA754;
-    font-family: "Bebas Neue", cursive;
-    font-size: 1.5vw;
-  }
   .article:nth-of-type(4) {
     background-image: url("../images/ella-olsson-fxJTl_gDh28-unsplash.jpg");
-  }
-  .article:nth-of-type(4):hover {
-    width: 40vw;
-    height: 15vw;
-    -webkit-animation: rollout 1s;
-            animation: rollout 1s;
-  }
-  .article:nth-of-type(4):hover .article__link {
-    width: 40vw;
-    height: 15vw;
-    display: block;
-    background-color: #00000083;
-    border-radius: 20vw;
-    -webkit-animation: rollout 1s;
-            animation: rollout 1s;
-  }
-  .article:nth-of-type(4):hover .article__link .article__content {
-    text-decoration: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    color: #EFA754;
-    font-family: "Bebas Neue", cursive;
-    font-size: 1.5vw;
   }
 }
 

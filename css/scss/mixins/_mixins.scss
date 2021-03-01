@@ -47,13 +47,13 @@
         top: $top;
     }
     @if $bot != none{
-    bottom: $bot;
+        bottom: $bot;
     }
     @if $left != none{
-    left: $left;
+        left: $left;
     }
     @if $right != none{
-    right: $right;
+        right: $right;
     }
 }
 @mixin marginy($martop, $marleft, $marbot,$marright){
