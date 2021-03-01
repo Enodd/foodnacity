@@ -49,33 +49,35 @@
             background-size: 150%;
             background-position: 40% 34%;
             border-radius: 20vw;
+            &:nth-of-type(1){
+                background-image: url("../images/pureemarchawkowe.jpg");
+            }
+            &:nth-of-type(2){
+                background-image: url("../images/pureemarchawkowe.jpg");
+            }
+            &:nth-of-type(3){
+                background-image: url("../images/pureemarchawkowe.jpg");
+            }
+            &:nth-of-type(4){
+                background-image: url("../images/pureemarchawkowe.jpg");
+            }
         }
-        .article__img:nth-of-type(1){
-            background-image: url("../images/pureemarchawkowe.jpg");
-        }
-        .article__img:nth-of-type(2){
-            background-image: url("../images/pureemarchawkowe.jpg");
-        }
-        .article__img:nth-of-type(3){
-            background-image: url("../images/pureemarchawkowe.jpg");
-        }
-        .article__img:nth-of-type(4){
-            background-image: url("../images/pureemarchawkowe.jpg");
-        }
+        
+    }
+    &:nth-of-type(1){
+        background-image: url("../images/pureemarchawkowe.jpg");
+    }
+    &:nth-of-type(2){
+        background-image: url("../images/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg");
+    }
+    &:nth-of-type(3){
+        background-image: url("../images/asnim-ansari-SqYmTDQYMjo-unsplash.jpg");
+    }
+    &:nth-of-type(4){
+        background-image: url("../images/ella-olsson-fxJTl_gDh28-unsplash.jpg");
     }
 }
-.article:nth-of-type(1){
-    background-image: url("../images/pureemarchawkowe.jpg");
-}
-.article:nth-of-type(2){
-    background-image: url("../images/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg");
-}
-.article:nth-of-type(3){
-    background-image: url("../images/asnim-ansari-SqYmTDQYMjo-unsplash.jpg");
-}
-.article:nth-of-type(4){
-    background-image: url("../images/ella-olsson-fxJTl_gDh28-unsplash.jpg");
-}
+
 @media(min-width:1200px){
 .article{
     margin: 0.5vw;
@@ -86,7 +88,7 @@
     border-radius: 20vw;
     position: relative;
     animation: rollin 1s;
-    .article__link{
+    &__link{
         display: none;
     }
     &--sub{
@@ -96,35 +98,33 @@
             background-size: 150%;
             background-position: 40% 34%;
             border-radius: 20vw;
+            &:nth-of-type(1){
+                background-image: url("../images/pureemarchawkowe.jpg");
+            }
+            &:nth-of-type(2){
+                background-image: url("../images/pureemarchawkowe.jpg");
+            }
+            &:nth-of-type(3){
+                background-image: url("../images/pureemarchawkowe.jpg");
+            }
+            &:nth-of-type(4){
+                background-image: url("../images/pureemarchawkowe.jpg");
+            }
         }
-        .article__img:nth-of-type(1){
-            background-image: url("../images/pureemarchawkowe.jpg");
-        }
-        .article__img:nth-of-type(2){
-            background-image: url("../images/pureemarchawkowe.jpg");
-        }
-        .article__img:nth-of-type(3){
-            background-image: url("../images/pureemarchawkowe.jpg");
-        }
-        .article__img:nth-of-type(4){
-            background-image: url("../images/pureemarchawkowe.jpg");
-        }
+
+        
     }
-}
-.article:nth-of-type(1){
-    background-image: url("../images/pureemarchawkowe.jpg");
-    
-}
-.article:hover{
-    @include wymiary(40vw, 15vw);
-    animation: rollout 1s;
-    .article__link{
-        animation: rollout 1s;
+    &:hover{
         @include wymiary(40vw, 15vw);
-        display: block;
-        background-color: #00000083;
-        border-radius: 20vw;
-        .article__content{
+        animation: rollout 1s;
+        &__link{
+            animation: rollout 1s;
+            @include wymiary(40vw, 15vw);
+            display: block;
+            background-color: #00000083;
+            border-radius: 20vw;
+        }
+        &__content{
             text-decoration: underline;
             position: absolute;
             top:50%;
@@ -135,15 +135,20 @@
             font-size: 1.5vw;
         }
     }
+    &:nth-of-type(1){
+        background-image: url("../images/pureemarchawkowe.jpg");
+    }
+    &:nth-of-type(2){
+        background-image: url("../images/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg");
+    }
+    &:nth-of-type(3){
+        background-image: url("../images/asnim-ansari-SqYmTDQYMjo-unsplash.jpg");
+    }
+    &:nth-of-type(4){
+        background-image: url("../images/ella-olsson-fxJTl_gDh28-unsplash.jpg");
+    }
 }
-.article:nth-of-type(2){
-    background-image: url("../images/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg");
-}
-.article:nth-of-type(3){
-    background-image: url("../images/asnim-ansari-SqYmTDQYMjo-unsplash.jpg");
-}
-.article:nth-of-type(4){
-    background-image: url("../images/ella-olsson-fxJTl_gDh28-unsplash.jpg");
-}
+
+
 
 }

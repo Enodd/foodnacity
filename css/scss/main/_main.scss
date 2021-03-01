@@ -10,24 +10,24 @@
     width: 75vw;
     @include simpleflex(column, center, center);
     @include glassmorph(#628b8fb4, 4.5px, $dark-blue);
-    .section__title{
+    &__title{
         font-size: 4vw;
         font-family: $sans;
         color:$light-orange;
     }
-    .section__articlesection{
+    &__articlesection{
         @include simpleflex(column, center,center);
         width:40vw;
         margin-bottom: 1vw;
     }
-    .section__link{
+    &__link{
         text-decoration: underline;
         font-family:$sans;
         font-size: 3vw;
         color:$light-orange;
 
     }
-    .section__content{
+    &__content{
         color:white;
         font-family: $serif;
         font-size: 2.5vw;
@@ -40,16 +40,16 @@
 }
 @media(min-width:1200px){
     .section{
-        .section__title{
+        &__title{
             font-size: 2vw;
         }
-        .section__articlesection{
+        &__articlesection{
             width:40vw;
         }
-        .section__link{
+        &__link{
             font-size: 1.4vw;
         }
-        .section__content{
+        &__content{
             font-size: 1vw;
         }
     }
