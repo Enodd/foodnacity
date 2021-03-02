@@ -10,7 +10,7 @@
     @include simpleflex(column, center,center);
 }
 .menu{
-    .menu__element{
+    &__element{
         list-style: none;
     }
 }

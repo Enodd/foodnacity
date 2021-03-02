@@ -168,7 +168,7 @@
     -webkit-animation: rollout 1s;
             animation: rollout 1s;
   }
-  .article:hover__link {
+  .article:hover .article__link {
     -webkit-animation: rollout 1s;
             animation: rollout 1s;
     width: 40vw;
@@ -177,7 +177,7 @@
     background-color: #00000083;
     border-radius: 20vw;
   }
-  .article:hover__content {
+  .article:hover .article__content {
     text-decoration: underline;
     position: absolute;
     top: 50%;
@@ -570,7 +570,7 @@
           align-items: center;
 }
 
-.menu .menu__element {
+.menu__element {
   list-style: none;
 }
 /*# sourceMappingURL=main.css.map */

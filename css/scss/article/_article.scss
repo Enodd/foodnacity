@@ -117,14 +117,14 @@
     &:hover{
         @include wymiary(40vw, 15vw);
         animation: rollout 1s;
-        &__link{
+        .article__link{
             animation: rollout 1s;
             @include wymiary(40vw, 15vw);
             display: block;
             background-color: #00000083;
             border-radius: 20vw;
         }
-        &__content{
+        .article__content{
             text-decoration: underline;
             position: absolute;
             top:50%;
