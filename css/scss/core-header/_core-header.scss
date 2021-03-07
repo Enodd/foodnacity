@@ -7,47 +7,40 @@
     background-size: 150%;
     background-position: 0vw -50vw;
     background-repeat: no-repeat;
-    @include simpleflex(column, center, center);
+    @include simpleflex(column, center,center);
     position: relative;
     &__titlesection{
         @include wymiary(94.5vw, 90vh);
         @include glassmorph(#628b8fb4, 4.5px, $dark-blue);
-        position:relative;
+        @include simpleflex(column, center,center);
     }    
     &__title{
-        font-size:20vw;
+        font-size:22vw;
         font-family: $sans;
         color:white;
-        position:absolute;
-        top:20%;
-        left:50%;
-        transform:translate(-50%, -50%);
     }    
     &__link:nth-of-type(1){
         font-family: $sans;
-        font-size: 15vw;
+        font-size: 17vw;
         color:white;
-        position:absolute;
-        top:35%;
-        left: 30%;
         text-decoration: none;
         }
     &__link:nth-of-type(2){
         font-family: $sans;
-        font-size: 15vw;
+        font-size: 17vw;
         color:white;
-        position:absolute;
-        bottom:20%;
-        right: 26%;
         text-decoration: none;
     }   
     &--subsite{
-        @include wymiary(100%, 13vw);
+        @include wymiary(100%, 20vw);
+        .navigation{
+            @include wymiary(100%, 20vw);
+        }
     }
 }
 .navigation{
     background-color: $blue;
-    @include wymiary(100%, 13vw);
+    @include wymiary(100%, 20vw);
     @include simpleflex(row, space-evenly, center);
     position: sticky;
     top:0;
@@ -55,7 +48,7 @@
     &__pagetitle{
         flex-grow: 0.7;
         font-family:$sans;
-        font-size:5vw;
+        font-size:8vw;
         color:white;
     }
     &__menu{
@@ -67,8 +60,57 @@
             color:white;
             font-family: $sans;
             margin: 0.3em;
-            font-size: 3vw;
+            font-size: 5vw;
             list-style: none;
+        }
+    }
+}
+
+@media(min-width: 760px){
+    .core-header{
+        &__titlesection{
+            @include wymiary(94.5vw, 90vh);
+        }
+        &__title{
+            font-size:20vw;
+            position:absolute;
+            top:20%;
+            left:50%;
+            transform:translate(-50%, -50%);
+        }    
+        &__link:nth-of-type(1){
+            font-size: 15vw;
+            position:absolute;
+            top:35%;
+            left: 30%;
+        }
+        &__link:nth-of-type(2){
+            font-size: 15vw;
+            position:absolute;
+            bottom:20%;
+            right: 26%;
+        }   
+        &--subsite{
+            @include wymiary(100%, 13vw);
+            .navigation{
+                @include wymiary(100%, 13vw);
+            }
+        }
+    }
+    .navigation{
+        @include wymiary(100%, 13vw);
+        @include simpleflex(row, space-evenly, center);
+        &__pagetitle{
+            font-size:5vw;
+        }
+        &__menu{
+            @include simpleflex(row, center, center);
+        }
+        .menu{
+            &__link{
+                margin: 0.3em;
+                font-size: 3vw;
+            }
         }
     }
 }
@@ -100,9 +142,11 @@
         }   
         &--subsite{
             @include wymiary(100%, 7vw);
+            .navigation{
+                @include wymiary(100%, 7vw);
+            }
         }
     }
-}
     .navigation{
         @include wymiary(100%, 7vw);
         @include simpleflex(row, space-evenly, center);
@@ -119,3 +163,4 @@
             }
         }
     }
+}

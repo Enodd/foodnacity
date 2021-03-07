@@ -1,0 +1,79 @@
+.contact-form{
+    @include simpleflex(column, center, left);
+    &__label{
+        @include simpleflex(column, center, left);
+        margin: auto;
+        width: 30vw;
+        margin: .5vw;
+    }
+    &__content{
+        font-family: $sans;
+        color: #fff;
+        text-shadow: 2px 1px 0px #000;
+        font-size: 5vw;
+    }
+    &__input{
+        height: 7vw;
+        padding: .5vw;
+        border-radius: 3vw;
+        border: none;
+        &--textarea{
+            height: 25vw;
+            border-radius: 1vw;
+        }
+    }
+}
+@media(min-width:760px){
+    .contact-form{
+        @include simpleflex(column, center, left);
+        &__label{
+            @include simpleflex(column, center, left);
+            margin: auto;
+            width: 30vw;
+            margin: 1vw;
+        }
+        &__content{
+            font-family: $sans;
+            color: #fff;
+            text-shadow: 2px 1px 0px #000;
+            font-size: 4vw;
+        }
+        &__input{
+            height: 5vw;
+            padding: 1vw;
+            border-radius: 3vw;
+            border: none;
+            &--textarea{
+                height: 20vw;
+                border-radius: 1vw;
+            }
+        }
+    }
+}
+@media(min-width:1200px){
+    .contact-form{
+        @include simpleflex(column, center, left);
+        &__label{
+            @include simpleflex(column, center, left);
+            margin: auto;
+            width: 30vw;
+            margin: .5vw;
+        }
+        &__content{
+            font-family: $sans;
+            color: #fff;
+            text-shadow: 2px 1px 0px #000;
+            font-size: 2vw;
+        }
+        &__input{
+            height: 3vw;
+            padding: 1vw;
+            border: none;
+            border-radius: 3vw;
+            &--textarea{
+                border-radius: 1vw;
+                height: 10vw;
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+@import "../variables/variables";
+
+.page-navigation{
+    @include simpleflex(row, center, center);
+    margin-top: 2vw;
+    &__button{
+        text-decoration: none;
+        .arrow__icon{
+            &--left{
+                width: 6vw;      
+            }
+            &--right{
+                width: 6vw;
+                transform: rotate(180deg);   
+            }
+        }
+    }
+    &__page-indicator{
+        background-color: $light-blue;
+        @include wymiary(8.8vw,8.8vw);
+        border-radius: 3vw;
+        margin: .3vw;
+        position: relative;
+        &--number{
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-family: $sans;
+            color: $dark-blue;
+            font-size: 5vw;
+        }
+        &:nth-of-type(1){
+            background-color: $dark-blue;
+            .page-navigation__page-indicator--number{
+                color: $light-blue;
+            }
+        }
+    }
+}
+@media(min-width:760px){
+    .page-navigation{
+        margin-top: 2vw;
+        &__button{
+            .arrow__icon{
+                &--left{
+                    width: 4vw;      
+                }
+                &--right{
+                    width: 4vw; 
+                }
+            }
+        }
+        &__page-indicator{
+            @include wymiary(6.8vw,6.8vw);
+            border-radius: 2vw;
+            &--number{
+                font-size: 4vw;
+            }
+        }
+    }
+}
+@media(min-width:1200px){
+    .page-navigation{
+        &__button{
+            .arrow__icon{
+                &--left{
+                    width: 2vw;      
+                }
+                &--right{
+                    width: 2vw; 
+                }
+            }
+        }
+        &__page-indicator{
+            background-color: $light-blue;
+            @include wymiary(2.8vw,2.8vw);
+            border-radius: 1vw;
+            &--number{
+                font-size: 1.6vw;
+            }
+        }
+    }
+}

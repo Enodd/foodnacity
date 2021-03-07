@@ -3,6 +3,16 @@
     @include simpleflex(column, center, center);
     width: 100%;
     padding: 3vw;
+    &__form{
+        @include simpleflex(column, center, center);
+        @include wymiary(80vw, 70vh);
+    }
+    &__title{
+        font-family: $sans;
+        color: #fff;
+        text-shadow: .3vw .3vw 0px #000;
+        font-size: 10vw;
+    }
 }
 .section{
     margin:1vw;
@@ -11,7 +21,8 @@
     @include simpleflex(column, center, center);
     @include glassmorph(#628b8fb4, 4.5px, $dark-blue);
     &__title{
-        font-size: 4vw;
+        text-align: center;
+        font-size: 5.4vw;
         font-family: $sans;
         color:$light-orange;
     }
@@ -23,7 +34,7 @@
     &__link{
         text-decoration: underline;
         font-family:$sans;
-        font-size: 3vw;
+        font-size: 5vw;
         color:$light-orange;
 
     }
@@ -34,17 +45,47 @@
     }
 }
 .underline{
-    width: 13vw;
-    border-bottom: 0.2vw $light-orange solid;
+    width: 26vw;
+    border-bottom: .6vw $light-orange solid;
     margin-bottom: 0.9vw;
 }
+@media(min-width:760px){
+    .main{
+        &__form{
+            @include wymiary(80vw, 70vh);
+            margin: 2vw;
+        }
+    }
+    .section{
+        &__title{
+            font-size: 4vw;
+        }
+        &__link{
+            font-size: 3vw;
+        }
+        &__content{
+            font-size: 2.5vw;
+        }
+    }
+    .underline{
+        width: 16vw;
+        border-bottom: 0.3vw $light-orange solid;
+        margin-bottom: 0.9vw;
+    }
+}
 @media(min-width:1200px){
+    .main{
+        &__form{
+            @include wymiary(80vw, 65vh);
+            margin: 2vw;
+        }
+        &__title{
+            font-size: 5vw;
+        }
+    }
     .section{
         &__title{
             font-size: 2vw;
-        }
-        &__articlesection{
-            width:40vw;
         }
         &__link{
             font-size: 1.4vw;
