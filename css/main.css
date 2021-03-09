@@ -534,6 +534,7 @@
 
 .main {
   background-image: url("../images/keith-misner-h0Vxgz5tyXA-unsplash.jpg");
+  background-size: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1009,6 +1010,108 @@
     border-radius: 1vw;
     height: 10vw;
   }
+}
+
+.recipe__element:nth-of-type(2) {
+  padding-left: 1.5vw;
+  text-transform: lowercase;
+}
+
+.recipe__element:nth-of-type(3) {
+  padding-left: 1.5vw;
+  text-transform: lowercase;
+}
+
+.recipe__element:nth-of-type(4) {
+  padding-left: 1.5vw;
+  text-transform: lowercase;
+}
+
+.recipe__element:nth-of-type(5) {
+  padding-left: 1.5vw;
+  text-transform: lowercase;
+}
+
+.recipe__element:nth-of-type(6) {
+  padding-left: 1.5vw;
+  text-transform: lowercase;
+}
+
+.recipe__element:nth-of-type(7) {
+  padding-left: 1.5vw;
+  text-transform: lowercase;
+}
+
+.recipe__element:nth-of-type(8) {
+  padding-left: 1.5vw;
+  text-transform: lowercase;
+}
+
+.recipe__element:nth-of-type(9) {
+  padding-left: 1.5vw;
+  text-transform: lowercase;
+}
+
+.recipe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  position: relative;
+  width: 80%;
+}
+
+.recipe__title {
+  font-family: "Bebas Neue", cursive;
+  color: #EFA754;
+  font-size: 3vw;
+  text-decoration: underline;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 3vw;
+}
+
+.recipe__list {
+  list-style: none;
+}
+
+.recipe__element {
+  color: #fff;
+  font-family: "Source Serif Pro", serif;
+}
+
+.recipe__content {
+  color: #fff;
+  font-family: "Source Serif Pro", serif;
+}
+
+.recipe__content:nth-of-type(2) {
+  margin-top: 1.5vw;
+}
+
+.recipe__image {
+  width: 15vw;
+  position: relative;
+  float: right;
+  bottom: 0;
+  right: 0;
+}
+
+.recipe .underline {
+  width: 10vw;
+  border-bottom: .11vw #fff solid;
+  margin-top: 0.3vw;
+  margin-bottom: 1.5vw;
 }
 
 .container {

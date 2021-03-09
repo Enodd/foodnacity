@@ -1,3 +1,55 @@
+@mixin tekst() {
+    color:#fff;
+    font-family: $serif;
+}
+@for $i from 1 to 10 {
+    @if $i != 1 {
+        .recipe__element:nth-of-type(#{$i}){
+            padding-left: 1.5vw;
+            text-transform: lowercase;
+        }
+    }
+}
+
+
+
 .recipe{
-    
+    @include simpleflex(column, space-evenly, left);
+    position: relative;
+    width: 80%;
+    &__title{
+        font-family:$sans;
+        color:$light-orange;
+        font-size: 3vw;
+        text-decoration: underline;
+        width:80%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 3vw;
+    }
+    &__list{
+        list-style: none;
+    }
+    &__element{
+        @include tekst();
+    }
+    &__content{
+        @include tekst();
+        &:nth-of-type(2){
+            margin-top: 1.5vw;
+        }
+    }
+    &__image{
+        width: 15vw;
+        position: relative;
+        float:right;
+        bottom: 0;
+        right: 0;
+    }
+    .underline{
+        width: 10vw;
+        border-bottom: .11vw #fff solid;
+        margin-top: 0.3vw;
+        margin-bottom: 1.5vw;
+    }
 }

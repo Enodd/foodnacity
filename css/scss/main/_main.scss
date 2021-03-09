@@ -1,5 +1,6 @@
 .main{
     background-image: url("../images/keith-misner-h0Vxgz5tyXA-unsplash.jpg");
+    background-size: 100%;
     @include simpleflex(column, center, center);
     width: 100%;
     padding: 3vw;
