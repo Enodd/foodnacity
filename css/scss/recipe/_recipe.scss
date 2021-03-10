@@ -75,62 +75,6 @@
     }
 }
 
-@media(min-width:1200px){
-.recipe{
-    &__title{
-        @include wymiary(40vw, 15vw);
-        font-size: 3vw;
-        border-radius: 20vw;
-        padding: 2.8vw;
-        &--image{
-            border-radius: 20vw;
-            @include wymiary(40vw, 15vw);
-            margin: auto;
-            margin-bottom: 2vw;
-        }
-    }
-    &__list{
-        list-style: none;
-    }
-    &__element{
-        font-size: .9vw;
-        @include tekst();
-    }
-    &__content{
-        @include tekst();
-        font-size: .9vw;
-        &--title{
-            font-size: 1.5vw;
-            margin-bottom: 1vw;
-            @include tekst();
-        }
-        margin-bottom: 1vw;
-    }
-    &__image{
-        @include wymiary(13vw,13vw);
-        position: absolute;
-        border-radius: 20vw;
-        &:nth-of-type(1){
-            top: 20vw;
-            right: 0vw;
-        }
-        &:nth-of-type(2){
-            bottom: 15vw;
-            right: 13vw;
-        }
-        &:nth-of-type(3){
-            bottom: 0vw;
-            right: 0vw;
-        }
-    }
-    .underline{
-        width: 10vw;
-        border-bottom: .11vw #fff solid;
-        margin-top: 0.3vw;
-        margin-bottom: 1.5vw;
-    }
-}
-}
 @media(min-width:760px){
     .recipe{
         &__title{
@@ -166,5 +110,64 @@
             margin-top: 0.3vw;
             margin-bottom: 1.5vw;
         }
+    }
+}
+@media(min-width: 1200px){
+.recipe{
+    &__title{
+        @include wymiary(40vw, 20vw);
+        font-size: 3vw;
+        border-radius: 20vw;
+        padding-top: 6vw;
+        &--image{
+            border-radius: 20vw;
+            @include wymiary(40vw, 20vw);
+            margin: auto;
+            margin-bottom: 2vw;
+        }
+    }
+    &__list{
+        list-style: none;
+    }
+    &__element{
+        font-size: .9vw;
+        @include tekst();
+    }
+    &__content{
+        width: 40%;
+        text-align: left;
+        @include tekst();
+        font-size: .9vw;
+        &--title{
+            text-align: left;
+            font-size: 1.5vw;
+            margin-bottom: 1vw;
+            @include tekst();
+        }
+        margin-bottom: 1vw;
+    }
+    &__image{
+        @include wymiary(13vw,13vw);
+        position: absolute;
+        border-radius: 20vw;
+        &:nth-of-type(1){
+            top: 30vw;
+            right: 0vw;
+        }
+        &:nth-of-type(2){
+            bottom: 15vw;
+            right: 13vw;
+        }
+        &:nth-of-type(3){
+            bottom: 0vw;
+            right: 0vw;
+        }
+    }
+    .underline{
+        width: 10vw;
+        border-bottom: .11vw #fff solid;
+        margin-top: 0.3vw;
+        margin-bottom: 1.5vw;
+    }
     }
 }

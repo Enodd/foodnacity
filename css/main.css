@@ -1143,67 +1143,6 @@
   margin-bottom: 1.5vw;
 }
 
-@media (min-width: 1200px) {
-  .recipe__title {
-    width: 40vw;
-    height: 15vw;
-    font-size: 3vw;
-    border-radius: 20vw;
-    padding: 2.8vw;
-  }
-  .recipe__title--image {
-    border-radius: 20vw;
-    width: 40vw;
-    height: 15vw;
-    margin: auto;
-    margin-bottom: 2vw;
-  }
-  .recipe__list {
-    list-style: none;
-  }
-  .recipe__element {
-    font-size: .9vw;
-    color: #fff;
-    font-family: "Source Serif Pro", serif;
-  }
-  .recipe__content {
-    color: #fff;
-    font-family: "Source Serif Pro", serif;
-    font-size: .9vw;
-    margin-bottom: 1vw;
-  }
-  .recipe__content--title {
-    font-size: 1.5vw;
-    margin-bottom: 1vw;
-    color: #fff;
-    font-family: "Source Serif Pro", serif;
-  }
-  .recipe__image {
-    width: 13vw;
-    height: 13vw;
-    position: absolute;
-    border-radius: 20vw;
-  }
-  .recipe__image:nth-of-type(1) {
-    top: 20vw;
-    right: 0vw;
-  }
-  .recipe__image:nth-of-type(2) {
-    bottom: 15vw;
-    right: 13vw;
-  }
-  .recipe__image:nth-of-type(3) {
-    bottom: 0vw;
-    right: 0vw;
-  }
-  .recipe .underline {
-    width: 10vw;
-    border-bottom: .11vw #fff solid;
-    margin-top: 0.3vw;
-    margin-bottom: 1.5vw;
-  }
-}
-
 @media (min-width: 760px) {
   .recipe__title {
     font-size: 4vw;
@@ -1238,6 +1177,70 @@
   .recipe .underline {
     width: 20vw;
     border-bottom: .6vw #fff solid;
+    margin-top: 0.3vw;
+    margin-bottom: 1.5vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .recipe__title {
+    width: 40vw;
+    height: 20vw;
+    font-size: 3vw;
+    border-radius: 20vw;
+    padding-top: 6vw;
+  }
+  .recipe__title--image {
+    border-radius: 20vw;
+    width: 40vw;
+    height: 20vw;
+    margin: auto;
+    margin-bottom: 2vw;
+  }
+  .recipe__list {
+    list-style: none;
+  }
+  .recipe__element {
+    font-size: .9vw;
+    color: #fff;
+    font-family: "Source Serif Pro", serif;
+  }
+  .recipe__content {
+    width: 40%;
+    text-align: left;
+    color: #fff;
+    font-family: "Source Serif Pro", serif;
+    font-size: .9vw;
+    margin-bottom: 1vw;
+  }
+  .recipe__content--title {
+    text-align: left;
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+    color: #fff;
+    font-family: "Source Serif Pro", serif;
+  }
+  .recipe__image {
+    width: 13vw;
+    height: 13vw;
+    position: absolute;
+    border-radius: 20vw;
+  }
+  .recipe__image:nth-of-type(1) {
+    top: 30vw;
+    right: 0vw;
+  }
+  .recipe__image:nth-of-type(2) {
+    bottom: 15vw;
+    right: 13vw;
+  }
+  .recipe__image:nth-of-type(3) {
+    bottom: 0vw;
+    right: 0vw;
+  }
+  .recipe .underline {
+    width: 10vw;
+    border-bottom: .11vw #fff solid;
     margin-top: 0.3vw;
     margin-bottom: 1.5vw;
   }
